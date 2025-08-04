@@ -1,0 +1,130 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+html{
+	background-color: #76B0D5;
+}
+
+h1{
+	text-align: center;
+	font-size: 100px;
+	text-decoration: underline;
+}
+
+.desk{
+	margin: 0 auto;
+	width: 1320px;
+	height: 600px;
+}
+
+.box_auswahl{
+	width: 360px;
+	height: 442px;
+	float: left;
+	border: solid #FFF 4px;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.wrapper_farbauswahl{
+	width: 210px;
+	height: 300px;
+	margin: 52px auto;	
+}
+
+.farbauswahl{
+	width: 100px;
+	height: 100px;
+}
+.farbauswahl:active{
+	border: solid #FFF 4px;
+	box-sizing: border-box;
+	border-radius: 100%;
+}
+
+.button_fortfahren{
+	width: 110px;
+	height: 30px;
+	margin-left: 49px;
+	margin-top: 10px;
+	background-color: #76B0D5;
+}
+
+.box_anleitung{
+	width: 400px;
+	height: 442px;
+	float: right;
+	border: solid #FFF 4px;
+	box-sizing: border-box;
+	border-radius: 3px;
+
+	font-family: sans-serif;
+	color: black;
+}
+
+.h2{
+	font-size: 35px;
+	text-decoration: underline;
+}
+
+
+.game_background{
+	width: 330px;
+	height: 442px;
+	margin: 50px auto;
+	background-color: #4786AE;
+	border: solid #FFF 5px;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+
+.wrapper{
+	width: 364px;
+	margin: 0 auto;
+}
+
+.ball_farben{
+	width: 60px;
+	height: 60px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 1px;
+	margin-right: 1px;
+	float: left;
+	border: solid #474747 2px;
+	box-sizing: border-box;
+	border-radius: 100%;
+}
+
+.box_sw{
+	width: 70px;
+	height: 70px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+	float: left;
+}
+
+.ball_sw{
+	width: 35px;
+	height: 35px;
+	float: left;
+	border: solid #474747 1px;
+	box-sizing: border-box;
+	border-radius: 100%;
+}
+
+
+.ball_all{
+	width: 56px;
+	height: 56px;
+}
+
+.ball_sw_platziert{
+	width: 33px;
+	height: 33px;
+}

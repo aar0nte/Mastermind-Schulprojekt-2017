@@ -1,0 +1,124 @@
+﻿<html>
+
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" >
+		<title> Mastermind </title>
+		<link href="css/style.css" type="text/css" rel="stylesheet">
+		<script src="js/script.js"></script>
+
+	</head>
+
+	<body>
+		<h1> Mastermind </h1>
+
+		<div class="desk">
+			<div class="box_auswahl">
+				<div class="wrapper_farbauswahl">
+					<img class="farbauswahl" src="balls/blau.png"	onclick="pick_blau()">
+					<img class="farbauswahl" src="balls/gruen.png"	onclick="pick_gruen()">
+					<img class="farbauswahl" src="balls/lila.png"	onclick="pick_lila()">
+					<img class="farbauswahl" src="balls/rot.png"	onclick="pick_rot()">
+					<img class="farbauswahl" src="balls/pink.png"	onclick="pick_pink()">
+					<img class="farbauswahl" src="balls/gelb.png"	onclick="pick_gelb()">
+					<button onclick="fortfahren()" class="button_fortfahren">Fortfahren</button>
+				</div>
+			</div>
+
+			<div class="box_anleitung">
+				<h2 class="h2"> Anleitung </h2></br>
+				Das Spielprinzip besteht darin, dass vom Computer 4 Farben generiert werden und man diese durch Raten und Logik herausfinden muss.</br>
+				Das Spielfeld besteht aus 6 Zeilen mit jeweils vier großen Farbfeldern und vier kleinen Anzeigefeldern.</br>
+				Auf den Anzeigefeldern wird immer jeweils ein weißer Kreis für "Eine Farbe ist richtig"  und eine schwazer Kreis für "Eine Farbe und ihr Feld ist richtig" angezeigt.</br></br>
+				1. Auf der linken Seite eine Farbe auswählen.</br>
+				2. Vier Farben platzieren.</br>
+				3. Auf den "Fortfahren"- Button drücken um fortzufahren.</br>
+				4. So lange wiederholen bis die vier Farben erraten wurden oder die 6 Spielzüge aufgebraucht sind.
+			</div>
+			
+			<div class="game_background">
+				<div class= "wrapper">
+					<div id="ball0.0" class= "ball_farben" onclick="feld_0_0()"></div>
+					<div id="ball0.1" class= "ball_farben" onclick="feld_0_1()"></div>
+					<div id="ball0.2" class= "ball_farben" onclick="feld_0_2()"></div>
+					<div id="ball0.3" class= "ball_farben" onclick="feld_0_3()"></div>
+
+					<div class= "box_sw">
+						<div id="ball_sw0.0" class="ball_sw"></div>
+						<div id="ball_sw0.1" class="ball_sw"></div>
+						<div id="ball_sw0.2" class="ball_sw"></div>
+						<div id="ball_sw0.3" class="ball_sw"></div>
+					</div>
+				</div>
+				<div class= "wrapper">
+					<div id="ball1.0" class= "ball_farben" onclick="feld_1_0()"></div>
+					<div id="ball1.1" class= "ball_farben" onclick="feld_1_1()"></div>
+					<div id="ball1.2" class= "ball_farben" onclick="feld_1_2()"></div>
+					<div id="ball1.3" class= "ball_farben" onclick="feld_1_3()"></div>
+
+					<div class= "box_sw">
+						<div id="ball_sw1.0" class="ball_sw"></div>
+						<div id="ball_sw1.1" class="ball_sw"></div>
+						<div id="ball_sw1.2" class="ball_sw"></div>
+						<div id="ball_sw1.3" class="ball_sw"></div>
+					</div>
+				</div>
+				<div class= "wrapper">
+					<div id="ball2.0" class= "ball_farben" onclick="feld_2_0()"></div>
+					<div id="ball2.1" class= "ball_farben" onclick="feld_2_1()"></div>
+					<div id="ball2.2" class= "ball_farben" onclick="feld_2_2()"></div>
+					<div id="ball2.3" class= "ball_farben" onclick="feld_2_3()"></div>
+
+					<div class= "box_sw">
+						<div id="ball_sw2.0" class="ball_sw"></div>
+						<div id="ball_sw2.1" class="ball_sw"></div>
+						<div id="ball_sw2.2" class="ball_sw"></div>
+						<div id="ball_sw2.3" class="ball_sw"></div>
+					</div>
+				</div>
+				<div class= "wrapper">
+					<div id="ball3.0" class= "ball_farben" onclick="feld_3_0()"></div>
+					<div id="ball3.1" class= "ball_farben" onclick="feld_3_1()"></div>
+					<div id="ball3.2" class= "ball_farben" onclick="feld_3_2()"></div>
+					<div id="ball3.3" class= "ball_farben" onclick="feld_3_3()"></div>
+
+					<div class= "box_sw">
+						<div id="ball_sw3.0" class="ball_sw"></div>
+						<div id="ball_sw3.1" class="ball_sw"></div>
+						<div id="ball_sw3.2" class="ball_sw"></div>
+						<div id="ball_sw3.3" class="ball_sw"></div>
+					</div>
+				</div>
+				<div class= "wrapper">
+					<div id="ball4.0" class= "ball_farben" onclick="feld_4_0()"></div>
+					<div id="ball4.1" class= "ball_farben" onclick="feld_4_1()"></div>
+					<div id="ball4.2" class= "ball_farben" onclick="feld_4_2()"></div>
+					<div id="ball4.3" class= "ball_farben" onclick="feld_4_3()"></div>
+
+					<div class= "box_sw">
+						<div id="ball_sw4.0" class="ball_sw"></div>
+						<div id="ball_sw4.1" class="ball_sw"></div>
+						<div id="ball_sw4.2" class="ball_sw"></div>
+						<div id="ball_sw4.3" class="ball_sw"></div>
+					</div>
+				</div>
+				<div class= "wrapper">
+					<div id="ball5.0" class= "ball_farben" onclick="feld_5_0()"></div>
+					<div id="ball5.1" class= "ball_farben" onclick="feld_5_1()"></div>
+					<div id="ball5.2" class= "ball_farben" onclick="feld_5_2()"></div>
+					<div id="ball5.3" class= "ball_farben" onclick="feld_5_3()"></div>
+
+					<div class= "box_sw">
+						<div id="ball_sw5.0" class="ball_sw"></div>
+						<div id="ball_sw5.1" class="ball_sw"></div>
+						<div id="ball_sw5.2" class="ball_sw"></div>
+						<div id="ball_sw5.3" class="ball_sw"></div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+	</body>
+
+</html>
+
